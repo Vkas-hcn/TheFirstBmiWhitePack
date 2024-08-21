@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheFirstBmiWhitePack"
         tools:targetApi="31">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/sdgtydf"/>
         <activity android:name=".jjjjjmm.qqqqddd.Kkkpp"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"

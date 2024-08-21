@@ -293,7 +293,7 @@
                         android:background="@null"
                         android:gravity="end"
                         android:inputType="numberDecimal"
-                        android:maxLength="4"
+                        android:maxLength="3"
                         android:maxLines="1" />
 
                     <androidx.appcompat.widget.AppCompatTextView

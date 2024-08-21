@@ -49,6 +49,7 @@
             app:layout_constraintTop_toBottomOf="@+id/img_back">
 
             <LinearLayout
+                android:id="@+id/ll_weight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp"
@@ -83,6 +84,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_height"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp"

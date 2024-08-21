@@ -41,6 +41,12 @@ class AddActivity : AppCompatActivity() {
         binding.tvInquire.setOnClickListener {
             addSaveFun()
         }
+        binding.llWeight.setOnClickListener {
+            BmiUtils.showKeyboard(binding.aetWe)
+        }
+        binding.llHeight.setOnClickListener {
+            BmiUtils.showKeyboard(binding.aetHe)
+        }
     }
 
     private fun addSaveFun() {

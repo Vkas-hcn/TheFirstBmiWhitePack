@@ -1,15 +1,18 @@
 package com.the.first.bmi.white.pack.thefirstbmiwhitepack.bean
 
 import android.content.Context
+import androidx.annotation.Keep
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
+@Keep
 data class BmiBean (
     var weight: String = "0",
     var height: String = "0",
     var remark: String = "",
     var timestamp: Long = System.currentTimeMillis()
 )
+@Keep
 data class UserWeightBean (
     var weight: String = "0",
     var remark: String = "",

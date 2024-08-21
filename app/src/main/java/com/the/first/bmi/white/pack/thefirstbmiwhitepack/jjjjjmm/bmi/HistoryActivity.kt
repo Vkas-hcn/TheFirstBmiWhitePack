@@ -71,15 +71,19 @@ class HistoryActivity : AppCompatActivity() {
             showAllDelete(isAllDelete)
         }
         binding.tvDelete.setOnClickListener {
-            val selectedItems = binding.rvHis.slidOutPositions.sortedDescending() // 从大到小排序
-            selectedItems.forEach { position ->
-                bmiRepository.deleteRecord(historyBeanList[position].timestamp)
-                historyBeanList.remove(historyBeanList[position])
-                adapter.notifyItemRemoved(position)
+            val selectedItems = binding.rvHis.slidOutPositions.sortedDescending()
+            try {
+                selectedItems.forEach { position ->
+                    bmiRepository.deleteRecord(historyBeanList[position].timestamp)
+                    historyBeanList.remove(historyBeanList[position])
+                    adapter.notifyItemRemoved(position)
+                }
+                binding.rvHis.slidOutPositions.clear() // 清空滑动记录
+                initData() // 重新加载数据
+                showAllDelete(false)
+            }catch (e:Exception){
+                e.printStackTrace()
             }
-            binding.rvHis.slidOutPositions.clear() // 清空滑动记录
-            initData() // 重新加载数据
-            showAllDelete(false)
         }
 
         binding.tvCancel.setOnClickListener {
@@ -89,8 +93,10 @@ class HistoryActivity : AppCompatActivity() {
 
     private fun showAllDelete(isAllDelete:Boolean){
         binding.checkAll = isAllDelete
-        if(isAllDelete){
+        if (isAllDelete) {
             binding.rvHis.slideAllItems()
+        } else {
+            binding.rvHis.closeAllMenus()
         }
     }
 

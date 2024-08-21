@@ -68,15 +68,20 @@ class WeightActivity : AppCompatActivity() {
             showAllDelete(isAllDelete)
         }
         binding.tvDelete.setOnClickListener {
-            val selectedItems = binding.rvHis.slidOutPositions.sortedDescending() // 从大到小排序
-            selectedItems.forEach { position ->
-                weightRepository.deleteWeightRecord(weightBeanList[position].timestamp)
-                weightBeanList.remove(weightBeanList[position])
-                adapter.notifyItemRemoved(position)
+            try {
+                val selectedItems = binding.rvHis.slidOutPositions.sortedDescending() // 从大到小排序
+                selectedItems.forEach { position ->
+                    weightRepository.deleteWeightRecord(weightBeanList[position].timestamp)
+                    weightBeanList.remove(weightBeanList[position])
+                    adapter.notifyItemRemoved(position)
+                }
+                binding.rvHis.slidOutPositions.clear()
+                initData()
+                showAllDelete(false)
+            }catch (e:Exception){
+
             }
-            binding.rvHis.slidOutPositions.clear()
-            initData()
-            showAllDelete(false)
+
         }
 
         binding.tvCancel.setOnClickListener {
