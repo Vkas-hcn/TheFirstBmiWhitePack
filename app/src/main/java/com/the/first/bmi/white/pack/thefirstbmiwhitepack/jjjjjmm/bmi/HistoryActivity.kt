@@ -48,6 +48,10 @@ class HistoryActivity : AppCompatActivity() {
             binding.tvAvData.text = "0.00"
             binding.tvHiData.text = "0.00"
             binding.tvLoData.text = "0.00"
+            binding.tvLData.text = "0"
+            binding.tvNData.text = "0"
+            binding.tvHData.text = "0"
+            binding.tvOData.text = "0"
             return
         }
         val (averageBMI, maxBMI, minBMI) = calculateBmiStats(historyBeanList)
@@ -78,8 +82,8 @@ class HistoryActivity : AppCompatActivity() {
                     historyBeanList.remove(historyBeanList[position])
                     adapter.notifyItemRemoved(position)
                 }
-                binding.rvHis.slidOutPositions.clear() // 清空滑动记录
-                initData() // 重新加载数据
+                binding.rvHis.slidOutPositions.clear()
+                initData()
                 showAllDelete(false)
             }catch (e:Exception){
                 e.printStackTrace()
@@ -129,7 +133,6 @@ class HistoryActivity : AppCompatActivity() {
         })
     }
     private fun deleteItem(bean: BmiBean) {
-        historyBeanList.remove(bean)
         bmiRepository.deleteRecord(bean.timestamp)
         historyBeanList = bmiRepository.getAllRecords()
         adapter.upDataListData(historyBeanList)

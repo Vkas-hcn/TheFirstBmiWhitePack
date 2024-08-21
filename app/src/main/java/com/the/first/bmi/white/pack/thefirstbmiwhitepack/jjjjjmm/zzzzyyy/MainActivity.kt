@@ -68,9 +68,6 @@ class MainActivity : AppCompatActivity() {
         binding.tvRate.setOnClickListener {
             startActivity(Intent("android.intent.action.VIEW", Uri.parse("https://baidu.com/")))
         }
-        binding.tvUserTerms.setOnClickListener {
-            startActivity(Intent("android.intent.action.VIEW", Uri.parse("https://baidu.com/")))
-        }
         binding.tvPrivacyPolicy.setOnClickListener {
             startActivity(
                 Intent(

@@ -129,20 +129,6 @@
                 android:fontFamily="@font/nova_script"
                 android:textColor="#FF124DFE"
                 android:textSize="14sp" />
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_user_terms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="18dp"
-                android:gravity="center_vertical"
-                android:background="@drawable/bg_menu"
-                android:drawableEnd="@drawable/icon_direction"
-                android:padding="16dp"
-                android:text="User Terms"
-                android:fontFamily="@font/nova_script"
-                android:textColor="#FF124DFE"
-                android:textSize="14sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_privacy_policy"
