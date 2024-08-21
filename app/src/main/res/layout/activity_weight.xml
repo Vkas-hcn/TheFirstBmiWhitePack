@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="colorState"
+            type="Integer"
+            android:value="1" />
+
+        <variable
+            name="checkAll"
+            type="Boolean"
+            android:value="false" />
+
+        <variable
+            name="noRecord"
+            type="Boolean"
+            android:value="false" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_startpage_bg">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_re"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Tracking"
+            android:textColor="#FF333333"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_back" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            android:visibility="@{noRecord?View.GONE:View.VISIBLE}"
+            android:src="@{checkAll?@drawable/ic_check:@drawable/ic_dis_check}"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_wh"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_back">
+
+            <TextView
+                android:id="@+id/tvChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Changes"
+                android:textColor="#FFA6A6A6"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvCurrent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:textColor="#FFA6A6A6"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvStart"
+                app:layout_constraintStart_toEndOf="@+id/tvChanges"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textColor="#FFA6A6A6"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvAverage"
+                app:layout_constraintStart_toEndOf="@+id/tvCurrent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:textColor="#FFA6A6A6"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvStart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ch_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="19.53"
+                android:textColor="#FF1855FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvChanges"
+                app:layout_constraintStart_toStartOf="@+id/tvChanges"
+                app:layout_constraintTop_toBottomOf="@+id/tvChanges" />
+
+            <TextView
+                android:id="@+id/tv_current_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="19.53"
+                android:textColor="#FF1855FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvCurrent"
+                app:layout_constraintStart_toStartOf="@+id/tvCurrent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurrent" />
+
+            <TextView
+                android:id="@+id/tv_start_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="19.53"
+                android:textColor="#FF1855FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvStart"
+                app:layout_constraintStart_toStartOf="@+id/tvStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvStart" />
+
+
+            <TextView
+                android:id="@+id/tv_average_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="19.53"
+                android:textColor="#FF1855FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvAverage"
+                app:layout_constraintStart_toStartOf="@+id/tvAverage"
+                app:layout_constraintTop_toBottomOf="@+id/tvAverage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_top">
+
+            <com.the.first.bmi.white.pack.thefirstbmiwhitepack.wwwwwlll.SlideRecyclerView
+                android:id="@+id/rv_his"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{noRecord?View.GONE:View.VISIBLE}"
+                tools:listitem="@layout/layout_bmi_list" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_no_data"
+                android:text="@string/no_record"
+                android:textColor="#FFA2A2A2"
+                android:textSize="14sp"
+                android:visibility="@{noRecord?View.VISIBLE:View.GONE}" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_cancel"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="14dp"
+            android:text="Cancel"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:visibility="@{checkAll?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_delete"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_delete"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="14dp"
+            android:text="Delete"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:visibility="@{checkAll?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_cancel" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/icon_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con_add_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A6000000"
+            android:fitsSystemWindows="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_wh"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="24dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_wwww"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@drawable/icon_weight"
+                        android:drawablePadding="8dp"
+                        android:padding="5dp"
+                        android:text="Weight"
+                        android:textColor="#FFA6A6A6"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/aet_we"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="end"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KG"
+                        android:textColor="#FFA6A6A6"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/bg_wh"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="Enter Here……"
+                        android:textColor="@color/black"
+                        android:textColorHint="#FFA6A6A6"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/bg_save"
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:text="Save"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

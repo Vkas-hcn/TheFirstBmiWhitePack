@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pt_mono"
+                android:text="What Is a Healthy Weight?"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/icon_img_0"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A healthy weight is a number that is associated with a low risk of weight-related diseases and health issues. Although healthy weight guidelines have been developed at population levels, each person’s healthy weight range will vary and depend on factors such as age, sex, genetics, body frame, existing medical history, lifestyle habits, and weight as a young adult. Weight is only one of many determinants of health. Body mass index (BMI), which measures weight standardized for height, is often used as a measure of health risk. Although it does not measure body fat or body composition directly, research has shown BMI to correlate closely with other methods that directly measure body fat.
+There are many reasons for weight gain including certain medications (corticosteroids, antidepressants, beta-blockers, antipsychotics, insulin), pregnancy, chronic stress, chronically poor sleep, an excessive calorie intake, and lack of adequate exercise.
+It is beneficial to keep a steady weight as much as possible and control excessive weight gain over time, which is strongly associated with health risks."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pt_mono"
+                android:text="Maintain, Don’t Gain"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintaining a healthy weight can lower the risk of heart disease, stroke, diabetes, high blood pressure, and many different cancers.
+Your weight, waist size, and the amount of weight gained since your mid-20s can have health implications. These factors may strongly influence your chances of developing the following diseases and conditions:
+- Cardiovascular disease including heart attack and stroke
+- Diabetes
+- Cancer
+- Arthritis
+- Gallstones
+- Asthma
+- Cataracts
+- Infertility
+- Snoring
+- Sleep apnea
+Most adults gain on average 1-2 pounds each year.  Gaining weight as you age increases the chances of developing one or more chronic diseases.
+- In the Nurses’ Health Study and the Health Professionals Follow-up Study, middle-aged women and men who gained 11 to 22 pounds after age 20 were up to three times more likely to develop heart disease, high blood pressure, type 2 diabetes, and gallstones than those who gained five pounds or fewer.  Those who gained more than 22 pounds had an even larger risk of developing these diseases.
+- Another analysis of Nurses’ Health Study data found that adult weight gain can increase the risk of postmenopausal breast cancer, even after menopause.  Encouragingly, for women who had never used hormone replacement therapy, losing weight after menopause—and keeping it off—cut their risk of postmenopausal breast cancer in half."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

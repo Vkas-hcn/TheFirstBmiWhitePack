@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="32dp">
+
+    <ImageView
+        android:id="@+id/img_wz"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:src="@drawable/icon_img_1" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/pt_mono"
+        android:text="What Causes Weight Gain?"
+        android:textColor="#FF333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/pt_mono"
+        android:lineHeight="30sp"
+        android:maxLines="3"
+        android:text="In times of need, he pleaded with the Lord his God and humbled himself before the gods of his ancestor"
+        android:textColor="#FF757575"
+        android:textSize="14sp" />
+</LinearLayout>

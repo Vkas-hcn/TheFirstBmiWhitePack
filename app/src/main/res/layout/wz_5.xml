@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_mono"
+                android:text="Healthy Longevity"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/icon_img_4"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longevity is the achievement of a long life. We may hope for longevity so that we can experience many years of quality time with loved ones or have time to explore the world. But living to a ripe old age doesn’t necessarily mean healthy or happy longevity if it is burdened by disability or disease. The population of people over age 65 has grown more quickly than other age groups due to longer life spans and declining birth rates, and yet people are living more years in poor health. Therefore, we will explore not just one’s lifespan but healthspan, which promotes more healthy years of life.
+What you do today can transform your healthspan or how you age in the future. Although starting early is ideal, it’s never too late to reap benefits.
+Five Key Lifestyle Factors
+Researchers from Harvard University looked at factors that might increase the chances of a longer life. Using data collected from men and women from the Nurses’ Health Study and Health Professionals Follow-up Study who were followed for up to 34 years, researchers identified five low-risk lifestyle factors: healthy diet, regular exercise (at least 30 minutes daily of moderate to vigorous activity), healthy weight (as defined by a body mass index of 18.5-24.9), no smoking, and moderate alcohol intake (up to 1 drink daily for women, and up to 2 daily for men). Compared with those who did not incorporate any of these lifestyle factors, those with all five factors lived up to 14 years longer.
+In a follow-up study, the researchers found that those factors might contribute to not just a longer but also a healthier life. They saw that women at age 50 who practiced four or five of the healthy habits listed above lived about 34 more years free of diabetes, cardiovascular diseases, and cancer, compared with 24 more disease-free years in women who practiced none of these healthy habits. Men practicing four or five healthy habits at age 50 lived about 31 years free of chronic disease, compared with 24 years among men who practiced none. Men who were current heavy smokers, and men and women with obesity, had the lowest disease-free life expectancy.
+Five factors for a longer and healthier lifespan
+1. Healthy diet – The prevalence of hypertension (high blood pressure) and dementia increases with age. Eating patterns such as those from the DASH, MIND, and Mediterranean diets can lower the risk of these and other chronic conditions that accompany older ages. A multivitamin-mineral supplement may also help to improve cognitive function and memory in some people, according to large randomized controlled trials.
+2. Regular exercise – Regular physical activity lowers the risk of several chronic conditions that increase with age including heart disease, hypertension, diabetes, osteoporosis, certain cancers, and cognitive decline. Exercise also helps to lower anxiety and blood pressure, and improve sleep quality. The Physical Activity Guidelines for Americans from the U.S. Department of Health and Human Services first recommends to move more and sit less, with some activity better than none. For additional health benefits, they advise a minimum of 150-300 minutes weekly of moderate to vigorous activity, like brisk walking or fast dancing, as well as two days a week of muscle-strengthening exercises. Older adults who are at risk for falls may also wish to include balance training such as tai chi or yoga.
+3. Healthy weight – Determining one’s healthy weight range is unique for each person. Factors to consider include reviewing current health conditions, family history, weight history, and genetically inherited body type. Rather than focusing on scale weight alone, monitoring an increase in harmful visceral “belly fat” and weight change since age 20 may be useful.
+4. Not smoking – Smoking is a strong risk factor for cancer, diabetes, cardiovascular disease, lung diseases, and earlier death as it promotes chronic inflammation and oxidative stress (a condition that can damage cells and tissues). Smoking harms nearly every organ of the body. Quitting greatly reduces the risk of these smoking-related diseases.
+5. Moderate alcohol – Research finds that moderate drinking, defined as 1 drink daily for women and 2 drinks daily for men, is associated with lower risk of type 2 diabetes, heart attacks, and early death from cardiovascular disease. Low to moderate amounts of alcohol raises levels of “good” cholesterol or high-density lipoprotein (HDL) and prevent small blood clots that can block arteries. However, because alcohol intake—especially heavier drinking—is also associated with risks of addiction, liver disease, and several types of cancer, it is a complex issue that is best discussed with your physician to weigh your personal risk versus benefit."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

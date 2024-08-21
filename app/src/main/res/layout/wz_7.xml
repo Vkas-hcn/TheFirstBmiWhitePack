@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_mono"
+                android:text="Measuring Body Fat"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/icon_img_6"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obesity, or body fatness, is calculated with various methods that range in accuracy and have limitations. Combining two or more methods, if possible, may better predict if someone has increased health risks related to weight.
+Body Mass Index (BMI)
+Why use BMI?
+One of the most widely used tools for estimating excess fat is the body mass index (BMI). BMI only measures excess weight, calculating a ratio of one’s weight to height.  However, research has shown that BMI often correlates with “gold standard” direct measures of fat mass and fat-free mass such as underwater weighing (hydrostatic weighing) and dual X-ray absorptiometry (DEXA). In comparison with these methods that require expensive equipment, BMI is noninvasive, easy to calculate, and can be used anywhere.
+Because of its simplicity and widespread use, BMI is often used when studying populations. Researchers can compare the BMI of groups of people over time in different areas, to screen for obesity and its related health risks.
+BMI does have several limitations. It can’t measure location of fat (e.g., belly fat is linked with greater health risks), muscle mass, or bone mass—all of which contribute to weight. One’s age, sex, race, and ethnicity can also affect BMI.  For example, when comparing two people with the same BMI:
+- Women genetically have more body fat and less muscle mass than men.
+- Highly trained athletes may have a high BMI from increased muscle mass but little body fat.
+- Older adults tend to carry more body fat than younger adults.
+- While BMI and weight tend to decline in the elderly, visceral abdominal fat may continue to increase.
+- Men and women with larger body frames may have a higher weight from greater (heavier) bone mass rather than fat mass.
+- Some studies have found that Black individuals have less body fat and more lean muscle than other ethnicities at the same BMI. However, Blacks and Hispanics have the highest rates of obesity in the U.S., so the overall burden of obesity-related diseases is still higher in these groups.
+For these reasons, BMI might be used as a screening tool for potential weight-related problems rather than to diagnose certain conditions. The accuracy of BMI in predicting health risk may vary across different individuals and racial and ethnic groups.  Some populations have higher rates of obesity but that do not have corresponding rates of metabolic diseases like diabetes, and vice versa.  For instance, Southeast Asians can have a normal BMI but be metabolically unhealthy.
+BMI might be supplemented with other measures such as waist circumference or waist-hip ratio that better assess fat distribution.
+Interpreting the BMI number
+- The World Health Organization defines a “normal” weight as a BMI of 18.5 to 24.9, “overweight or pre-obesity” as a BMI of 25.0 to 29.9, and “obesity” as a BMI of 30 or higher. It further classifies levels of obesity as Class I (BMI 30.0 to 34.9), Class II (BMI 35.0 to 39.9), and Class III (BMI 40 or higher).
+- At a population level, a high BMI is generally associated with an increased risk of disease and early death. Many studies have shown that a BMI above 25 increases the chances of dying early compared to those with normal weight:
+  - A meta-analysis published in the New England Journal of Medicine showed a clear relationship between BMI and mortality, where both people with underweight (BMI &lt;18.5) and with overweight and obesity (BMI >25) had greater mortality.  The lowest death rate from any cause was associated with the BMI range between 22.5 and 24.9. To address some methodological flaws in previous studies, this study excluded smokers who tend to have lower weight due to smoking, individuals with cancer and heart disease who might have lost weight due to these conditions, and individuals over the age of 85 who could have a normal BMI but suffer from frailty or other age-related unhealthy weight loss.
+  - Another large meta-analysis in The Lancet that looked at data across four continents found that for every five units higher of a BMI above 25, risk of premature death increased by about 31%.  The study also looked at specific causes of death, and found that for each 5-unit increase in BMI above 25, the corresponding increases in risk were 49% for cardiovascular mortality, 38% for respiratory disease mortality, and 19% for cancer mortality. This meta-analysis also excluded participants who were current or former smokers, those who had chronic diseases at the beginning of the study, and any who died in the first five years of follow-up (a combined 1.6 million deaths were recorded across these studies where participants were followed for an average of 14 years).
+-
+When examining the relationship between BMI and mortality, failure to adjust for these variables can lead to reverse causation (where a low body weight is the result of underlying illness, rather than the cause) or confounding by smoking (because smokers tend to weigh less than non-smokers and have much higher mortality rates). Experts say these methodological flaws have led to paradoxical, misleading results that suggest a survival advantage to being overweight."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

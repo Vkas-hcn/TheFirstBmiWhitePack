@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_mono"
+                android:text="What Causes Weight Gain?"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/icon_img_1"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Diet. The quantity and quality of food in your diet has a strong impact on weight.
+2. Genes. Some people are genetically predisposed to gain weight more easily than others or to store fat around the midsection. Genes do not have to become destiny, however, and studies suggest that eating a healthy diet, staying active, and avoiding unhealthy habits like drinking soda can prevent the genetic predisposition to risk for obesity.  Read more about genetic risk for obesity on the Obesity Prevention Source.
+3. Physical inactivity. Exercise has a host of health benefits, including reducing the chances of developing heart disease, some types of cancer, and other chronic diseases.  Physical activity is a key element of weight control and health.
+4. Stress. Chronic stress can lead to unhealthy eating habits, such as elevated cortisol levels causing cravings for “comfort” foods of highly processed snacks or sweets, having lower motivation to prepare balanced meals or even forgetting to eat, and disrupting sleep that can lead to higher intakes of caffeine or high-calorie sugary snacks to boost energy.
+5. Inadequate sleep. Research suggests that there’s a link between how much people sleep and how much they weigh. In general, children and adults who get too little sleep tend to weigh more than those who get enough sleep. "
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

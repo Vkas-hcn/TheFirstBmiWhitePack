@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_mono"
+                android:text="Body Fat"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/icon_img_5"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We may not appreciate body fat, especially when it accumulates in specific areas like our bellies or thighs. But fat is an important source of stored energy when we can’t get to food for an extended time. Within the matrix of body fat, also called adipose tissue, there is not only fat cells but nerve and immune cells and connective tissue.  Fat tissue releases hormones that control metabolism and appetite (i.e., leptin, adiponectin) and that affect insulin sensitivity (i.e., tumor necrosis factor-alpha, interleukin-6). Macrophages, neutrophils, and eosinophils are some of the immune cells found in fat tissue that play a role in inflammation—both anti-inflammatory and proinflammatory. Fat cells also secrete proteins and build enzymes involved with immune function and the creation of steroid hormones.
+Fat cells can grow in size and number. The amount of fat cells in our bodies is determined soon after birth and during adolescence, and tends to be stable throughout adulthood if weight remains fairly stable. But eating too many calories in the long-term can cause fat cells to increase in size and be stored in various areas throughout the body, which leads to a risk of chronic inflammation and glitches in healthy metabolism, with the potential for new fat cells to grow. These larger fat cells become resistant to insulin, which increases the risk of type 2 diabetes and cardiovascular disease. Weight loss can reduce the size of fat cells but not the number.
+Obesity, defined as an excessive amount of body fat, is a common and expensive medical condition in the U.S., strongly associated with an increased risk of heart disease, stroke, type 2 diabetes, and certain types of cancer, as well as premature deaths from these diseases.
+Types of Body Fat
+Fat tissue comes in white, brown, beige, and even pink.  Some are necessary for good health.
+Types
+- Brown fat – Infants carry the most brown fat, which keeps them warm. It is stimulated by cold temperatures to generate heat. The amount of brown fat does not change with increased calorie intake, and those who have overweight or obesity tend to carry less brown fat than lean persons.
+- White fat – These large round cells are the most abundant type and are designed for fat storage, accumulating in the belly, thighs, and hips. They secrete more than 50 types of hormones, enzymes, and growth factors including leptin and adiponectin, which helps the liver and muscles respond better to insulin (a blood sugar regulator). But if there are excessive white cells, these hormones are disrupted and can cause the opposite effect of insulin resistance and chronic inflammation.
+- Beige fat – This type of white fat can be converted to perform similar traits as brown fat, such as being able to generate heat with exposure to cold temperatures or during exercise.
+- Pink fat – This type of white fat is converted to pink during pregnancy and lactation, producing and secreting breast milk.
+- Essential fat – This type may be made up of brown, white, or beige fat and is vital for the body to function normally. It is found in most organs, muscles, and the central nervous system including the brain. It helps to regulate hormones like estrogen, insulin, cortisol, and leptin; control body temperature; and assist in the absorption of vitamins and minerals. When a person’s body fat dips below a certain level (about less than 5% in men and less than 10% in women), there may not be enough essential fat to perform these functions.
+Location
+- Subcutaneous – You can pinch this layer of fat that sits directly underneath the skin’s surface, cushioning the bones and joints. It’s the body’s most abundant type of fat and tends to accumulate around the waist, hips, upper back, buttocks, and thighs. Very high amounts of subcutaneous fat can increase the risk of disease, though not as significantly as visceral fat.
+- Visceral – An excess of this type of white fat is sometimes referred to as “belly fat” or “central obesity,” as it accumulates deep in the abdominal cavity, wrapping around digestive organs like the pancreas, intestines, and liver but also the heart. Having a lot of visceral fat is linked with a higher risk of cardiovascular disease, diabetes, and certain cancers. It may secrete inflammatory chemicals called cytokines that promote insulin resistance."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_mono"
+                android:text="Tips to lose weight safely"
+                android:textColor="#FF333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/icon_img_2"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Keep it slow and steady. People who lose weight gradually and steadily (about 1 to 2 pounds per week) are more successful at keeping weight off.  This allows the body to adjust to the change and can lower the risk of developing strong cravings and feelings of deprivation that often accompany more rapid weight loss.
+- Include self-management and monitoring. This includes setting goals such as with the SMART acronym, which stands for Specific, Measurable, Achievable, Relevant, and Time-Bound. Start by creating 2-3 short-term SMART goals. Self-monitoring such as with daily or weekly food journaling or using behavior apps can provide insight and accountability to eating behaviors. This category also includes problem solving, such as having a plan for “relapses” if weight is regained due to stressful life changes, holidays, or job demands.
+- Create a support system. Research suggests that having frequent contact with others for support (e.g., trusted family member or friend, physician, health coach, registered dietitian, or a fellow friend or coworker on a similar healthy weight journey) can be valuable in providing encouragement and accountability.
+- Develop healthy eating patterns. Although some researchers have questioned the usefulness of energy balance (calories eaten versus calories expended), current evidence indicates that calorie reduction remains the most effective approach for weight control. There are many dietary strategies (e.g., high-carb low-fat vs. low-carb high-fat vs. intermittent fasting vs. a Mediterranean diet), but research has not consistently shown greater weight loss with one plan over another in the long-term. The Healthy Eating Plate model that provides balanced nutrition and portion control is a good place to start.
+- Practice mindfulness. Do you eat too fast or while distracted watching television or scrolling through your phone? Do you stress-eat or snack even when not hungry? Mindful eating addresses these behaviors that are associated with weight gain. Increasing awareness and appreciation of food can provide greater satisfaction, physically and mentally, that may help reduce overeating.
+- Stay active. Exercise is one component in maintaining a healthy weight and preventing weight gain, but it also plays a key role in wellbeing and mental health. The National Weight Control Registry, which follows people who have lost and maintained a 30-pound loss for at least one year, shows that participants include about one hour of moderate-vigorous exercise daily such as brisk walking. However there is variation among participants, with some requiring more exercise and some less to keep the weight off. How much is needed will depend on one’s genes and lifestyle factors. Performing different types of exercises can expand the range of benefits even further.
+- Prioritize self-care. In a rushed society with never-ending demands, taking care of our bodies can quickly fall to the bottom of our priority list. Dedicating time to care for one’s emotional, physical, and spiritual needs can promote a healthy weight. Many of the factors listed above are examples of self-care; others could be discovering a new hobby, practicing daily meditation, or allowing time to just do nothing. Self-care may help improve mood and a sense of wellbeing, and increase motivation and energy levels. It also cultivates self-compassion and resilience, as one learns to accept their mistakes and move on."
+                android:textColor="#FF757575"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:fontFamily="@font/pt_mono"
+                android:layout_marginHorizontal="20dp"
+                android:lineHeight="30sp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
